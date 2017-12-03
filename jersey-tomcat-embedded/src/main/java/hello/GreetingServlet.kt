@@ -5,8 +5,8 @@ import javax.servlet.http.HttpServlet
 import javax.servlet.http.HttpServletRequest
 import javax.servlet.http.HttpServletResponse
 
-@WebServlet("/hello")
-class HelloServlet : HttpServlet() {
+@WebServlet("/greeting")
+class GreetingServlet : HttpServlet() {
     override fun doGet(req: HttpServletRequest, resp: HttpServletResponse) {
         resp.writer.write("""
  <body>
